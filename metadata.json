@@ -1,0 +1,6 @@
+{
+  "name": "JavaSkillX",
+  "description": "Interactive Java programming assessment platform with 50 sequential challenges, real OpenJDK 17 execution sandboxing, DSA readiness diagnostics, and mock technical interviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

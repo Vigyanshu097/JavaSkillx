@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: javaskillx-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - DATABASE_URL=postgresql://javaskillx_user:javaskillx_secure_pass@postgres:5432/javaskillx_db
+    volumes:
+      - javaskillx_data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - javaskillx-net
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: javaskillx-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: javaskillx_user
+      POSTGRES_PASSWORD: javaskillx_secure_pass
+      POSTGRES_DB: javaskillx_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U javaskillx_user -d javaskillx_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - javaskillx-net
+
+  # Dedicated isolated runner image for executing untrusted Java code with zero networking
+  runner:
+    build:
+      context: ./java-runner
+      dockerfile: Dockerfile
+    container_name: javaskillx-runner
+    network_mode: "none"
+    mem_limit: 128m
+    cpus: 0.5
+    read_only: false
+    restart: "no"
+
+volumes:
+  javaskillx_data:
+  postgres_data:
+
+networks:
+  javaskillx-net:
+    driver: bridge
