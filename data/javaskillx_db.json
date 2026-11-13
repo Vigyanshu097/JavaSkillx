@@ -1,0 +1,135 @@
+{
+  "users": {
+    "b14221fc-2aa1-4245-80dc-e33b7dbf368d": {
+      "id": "b14221fc-2aa1-4245-80dc-e33b7dbf368d",
+      "username": "user_1794474022942",
+      "email": "user_1794474022942@example.com",
+      "passwordHash": "675df06861c5b2e2d0f594fc611310126d3277161cb347cc01d1c1b1129a24a19902534df8ede639e77784124e6c5c119da0304eb74e41ea50a68dfe85008fd6",
+      "salt": "1a3b2197819f714954f4c994647843a7",
+      "createdAt": "2026-11-12T09:00:23.032Z"
+    },
+    "2f4598c4-beef-4e42-9975-96f433e5a5f8": {
+      "id": "2f4598c4-beef-4e42-9975-96f433e5a5f8",
+      "username": "user_1794474047325",
+      "email": "user_1794474047325@example.com",
+      "passwordHash": "7d227edb140f6e0a8f2d5a35da9b88a1920472b81617161e28e041107501319760111b2493af6c40d6dd51797274c276bded3d343d192383e651af468875476e",
+      "salt": "b3d2933179da88690f0ce72ddb0b8b51",
+      "createdAt": "2026-11-12T09:00:47.410Z"
+    },
+    "d93b69b6-e596-48c1-aad6-a487fa8aaaba": {
+      "id": "d93b69b6-e596-48c1-aad6-a487fa8aaaba",
+      "username": "user_1794474192486",
+      "email": "user_1794474192486@example.com",
+      "passwordHash": "75d60d0b89d55f5333e327f9b59d0a31b70c048a1f3edbd047f03eba73f256ca729b823168cb814c265cb5ca4360244d4451fead1f30fa9bb9b06f7903d79258",
+      "salt": "d1e82149aadf5fa57f0b56344d96755c",
+      "createdAt": "2026-11-12T09:03:12.577Z"
+    }
+  },
+  "assessments": {
+    "83009348-4321-45ab-938f-898671aba481": {
+      "id": "83009348-4321-45ab-938f-898671aba481",
+      "guestToken": "test_guest_1794474022939",
+      "status": "IN_PROGRESS",
+      "currentQuestionIndex": 2,
+      "answers": {
+        "1": {
+          "questionId": 1,
+          "submittedAnswer": "8 bits, range -128 to 127",
+          "isCorrect": true,
+          "marksAwarded": 2,
+          "feedback": "Correct! Full marks awarded.",
+          "submittedAt": "2026-11-12T09:00:22.941Z"
+        }
+      },
+      "totalScore": 2,
+      "stageScores": {
+        "beginner": 2,
+        "intermediate": 0,
+        "advanced": 0
+      },
+      "topicScores": {
+        "Variables and Data Types": {
+          "total": 2,
+          "earned": 2,
+          "count": 1
+        }
+      },
+      "startedAt": "2026-11-12T09:00:22.939Z",
+      "lastActivityAt": "2026-11-12T09:00:22.941Z"
+    },
+    "0dba0231-3b79-45d5-ab3a-777cd3b67c55": {
+      "id": "0dba0231-3b79-45d5-ab3a-777cd3b67c55",
+      "guestToken": "test_guest_1794474047323",
+      "status": "IN_PROGRESS",
+      "currentQuestionIndex": 2,
+      "answers": {
+        "1": {
+          "questionId": 1,
+          "submittedAnswer": "8 bits, range -128 to 127",
+          "isCorrect": true,
+          "marksAwarded": 2,
+          "feedback": "Correct! Full marks awarded.",
+          "submittedAt": "2026-11-12T09:00:47.324Z"
+        }
+      },
+      "totalScore": 2,
+      "stageScores": {
+        "beginner": 2,
+        "intermediate": 0,
+        "advanced": 0
+      },
+      "topicScores": {
+        "Variables and Data Types": {
+          "total": 2,
+          "earned": 2,
+          "count": 1
+        }
+      },
+      "startedAt": "2026-11-12T09:00:47.323Z",
+      "lastActivityAt": "2026-11-12T09:00:47.324Z"
+    },
+    "3ab20a5d-a003-40f0-984a-1b0aa79a0c13": {
+      "id": "3ab20a5d-a003-40f0-984a-1b0aa79a0c13",
+      "guestToken": "test_guest_1794474192483",
+      "status": "IN_PROGRESS",
+      "currentQuestionIndex": 2,
+      "answers": {
+        "1": {
+          "questionId": 1,
+          "submittedAnswer": "8 bits, range -128 to 127",
+          "isCorrect": true,
+          "marksAwarded": 2,
+          "feedback": "Correct! Full marks awarded.",
+          "submittedAt": "2026-11-12T09:03:12.484Z"
+        }
+      },
+      "totalScore": 2,
+      "stageScores": {
+        "beginner": 2,
+        "intermediate": 0,
+        "advanced": 0
+      },
+      "topicScores": {
+        "Variables and Data Types": {
+          "total": 2,
+          "earned": 2,
+          "count": 1
+        }
+      },
+      "startedAt": "2026-11-12T09:03:12.483Z",
+      "lastActivityAt": "2026-11-12T09:03:12.484Z"
+    }
+  },
+  "userAchievements": {
+    "test_guest_1794474022939": [
+      "first_step"
+    ],
+    "test_guest_1794474047323": [
+      "first_step"
+    ],
+    "test_guest_1794474192483": [
+      "first_step"
+    ]
+  },
+  "interviewSessions": {}
+}
